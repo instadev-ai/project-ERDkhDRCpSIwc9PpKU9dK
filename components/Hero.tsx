@@ -21,10 +21,7 @@ export default function Hero() {
 
             {/* Heading */}
             <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block mb-2 animate-fade-in-up">Revolutionize</span>
-              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-200 animate-fade-in-up animation-delay-150">
-                Your Workflow
-              </span>
+              <span className="block mb-2 animate-fade-in-up">Itay is ge</span>
             </h1>
 
             {/* Description */}
