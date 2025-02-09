@@ -1,5 +1,12 @@
 import { IconType } from 'react-icons';
-import { HiOutlineLightningBolt, HiOutlineChartBar, HiOutlineShieldCheck, HiOutlineClock, HiOutlineChat, HiOutlineGlobe } from 'react-icons/hi';
+import { 
+  HiLightningBolt, 
+  HiChartBar, 
+  HiShieldCheck, 
+  HiClock, 
+  HiChat, 
+  HiGlobe 
+} from 'react-icons/hi';
 
 interface Feature {
   title: string;
@@ -13,37 +20,37 @@ export default function Features() {
     {
       title: 'Lightning Fast',
       description: 'Experience blazing fast performance with our optimized infrastructure',
-      icon: HiOutlineLightningBolt,
+      icon: HiLightningBolt,
       color: 'from-amber-400 to-orange-500'
     },
     {
       title: 'Powerful Analytics',
       description: 'Gain deep insights with our advanced analytics and reporting tools',
-      icon: HiOutlineChartBar,
+      icon: HiChartBar,
       color: 'from-blue-400 to-indigo-500'
     },
     {
       title: 'Enterprise Security',
       description: 'Bank-grade security with end-to-end encryption and compliance',
-      icon: HiOutlineShieldCheck,
+      icon: HiShieldCheck,
       color: 'from-green-400 to-emerald-500'
     },
     {
       title: '24/7 Support',
       description: 'Round-the-clock support from our dedicated customer success team',
-      icon: HiOutlineClock,
+      icon: HiClock,
       color: 'from-purple-400 to-pink-500'
     },
     {
       title: 'Team Collaboration',
       description: 'Seamless collaboration tools for teams of any size',
-      icon: HiOutlineChat,
+      icon: HiChat,
       color: 'from-red-400 to-rose-500'
     },
     {
       title: 'Global Scale',
       description: 'Deploy worldwide with our distributed infrastructure',
-      icon: HiOutlineGlobe,
+      icon: HiGlobe,
       color: 'from-teal-400 to-cyan-500'
     }
   ];
