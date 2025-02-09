@@ -1,14 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { HiCheck } from 'react-icons/hi';
 
-interface PricingTier {
+type PricingTier = {
   name: string;
   price: string;
   description: string;
   features: string[];
   highlighted?: boolean;
   callToAction: string;
-}
+};
 
 export default function Pricing() {
   const tiers: PricingTier[] = [
@@ -109,7 +109,7 @@ export default function Pricing() {
               <ul className="mt-8 space-y-4">
                 {tier.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
-                    <div className={`flex-shrink-0 ${tier.highlighted ? 'text-indigo-200' : 'text-indigo-400'}">
+                    <div className={`flex-shrink-0 ${tier.highlighted ? 'text-indigo-200' : 'text-indigo-400'}`}>
                       <HiCheck className="h-6 w-6" />
                     </div>
                     <p className="ml-3 text-base">{feature}</p>
