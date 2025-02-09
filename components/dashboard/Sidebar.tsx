@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Home, Cloud, Buildings, LogOut } from 'lucide-react';
 
 export default function Sidebar() {
   return (
@@ -11,29 +9,26 @@ export default function Sidebar() {
       <nav className="mt-6">
         <ul className="space-y-2">
           <li>
-            <Link href="/dashboard" className="flex items-center px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
-              <Home className="mr-3 h-5 w-5" />
+            <Link href="/dashboard" className="block px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
               Dashboard
             </Link>
           </li>
           <li>
-            <Link href="/dashboard/weather" className="flex items-center px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
-              <Cloud className="mr-3 h-5 w-5" />
+            <Link href="/dashboard/weather" className="block px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
               Weather
             </Link>
           </li>
           <li>
-            <Link href="/dashboard/cities" className="flex items-center px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
-              <Buildings className="mr-3 h-5 w-5" />
+            <Link href="/dashboard/cities" className="block px-6 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors duration-200">
               Cities List
             </Link>
           </li>
         </ul>
       </nav>
       <div className="absolute bottom-0 w-full p-6">
-        <Button className="w-full flex items-center justify-center" variant="outline">
-          <LogOut className="mr-2 h-4 w-4" /> Logout
-        </Button>
+        <button className="w-full px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Logout
+        </button>
       </div>
     </aside>
   );
