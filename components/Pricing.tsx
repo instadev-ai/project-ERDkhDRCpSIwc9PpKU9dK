@@ -83,7 +83,7 @@ export default function Pricing() {
               className={`relative rounded-2xl ${tier.highlighted 
                 ? 'bg-gradient-to-b from-indigo-500 to-purple-600 text-white shadow-2xl shadow-indigo-500/25 scale-105 z-10' 
                 : 'bg-gray-800 text-gray-100'} 
-                p-8 transform hover:scale-[1.02] transition-all duration-300`}
+                p-8 flex flex-col h-full transform hover:scale-[1.02] transition-all duration-300`}
             >
               {tier.highlighted && (
                 <div className="absolute -top-5 left-0 right-0 flex justify-center">
@@ -106,7 +106,7 @@ export default function Pricing() {
               </div>
 
               {/* Feature List */}
-              <ul className="mt-8 space-y-4">
+              <ul className="mt-8 space-y-4 flex-grow">
                 {tier.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <div className={`flex-shrink-0 ${tier.highlighted ? 'text-indigo-200' : 'text-indigo-400'}`}>
@@ -118,7 +118,7 @@ export default function Pricing() {
               </ul>
 
               {/* Call to Action */}
-              <div className="mt-8">
+              <div className="mt-8 pt-6">
                 <Button 
                   className={`w-full py-6 ${tier.highlighted 
                     ? 'bg-white text-indigo-600 hover:bg-gray-50 shadow-lg shadow-black/25' 
